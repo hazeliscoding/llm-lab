@@ -1,0 +1,20 @@
+[project]
+name = "llm-lab"
+version = "0.1.0"
+description = "My hands-on companion repo for Build a Large Language Model (From Scratch) by Sebastian Raschka."
+readme = "README.md"
+authors = [
+    { name = "Hazel Granados", email = "hazel.granados@protonmail.com" }
+]
+# Pinned below 3.14: TensorFlow (used in chapter 5 to load the GPT-2 weights)
+# doesn't ship Python 3.14 wheels yet.
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "jupyter>=1.1.1",
+    "matplotlib>=3.11.2",
+    "tiktoken>=0.14.0",
+    "torch>=2.14.1",
+]
+
+# No [build-system] on purpose: this is a notebook workspace, not an
+# installable package, so `uv sync` only installs the dependencies.
