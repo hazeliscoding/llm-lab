@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Virtual environment (created by uv)
+.venv/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Secrets
+.env
+
+# Editors and OS
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Downloaded weights and saved checkpoints: far too big for git
+gpt2/
+*.pth
+*.pt
+*.ckpt*
+*.safetensors
+*.zip
+
+# My global gitignore excludes agent files, but this repo tracks them
+!AGENTS.md
+!CLAUDE.md
